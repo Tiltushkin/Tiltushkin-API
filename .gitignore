@@ -1,0 +1,67 @@
+# ===== OS / файловая система =====
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ===== Архивы/бэкапы =====
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# ===== Логи =====
+*.log
+logs/
+*.stackdump
+
+# ===== .NET / ASP.NET Core =====
+bin/
+obj/
+out/
+TestResults/
+*.user
+*.suo
+*.userprefs
+*.rsuser
+*.sln.docstates
+
+# ===== IDE / редакторы =====
+.vs
+.idea
+*.iml
+*.ipr
+*.iws
+
+# VS Code (обычно локальные настройки; если хочешь коммитить — убери эти строки)
+.vscode/
+
+# ===== ReSharper / NCrunch =====
+_ReSharper.Caches/
+*.ncrunch*
+.*crunch*.local.xml
+
+# ===== Покрытие тестов =====
+coverage/
+*.coverage
+*.coveragexml
+
+# ===== Docker / Compose =====
+docker-compose.override.yml
+docker-compose.local.yml
+.docker/
+.tmp/
+
+# ===== Переменные окружения и секреты =====
+.env
+.env.*
+!.env.example          # шаблон оставляем в репозитории
+
+# Локальные конфиги .NET (чтобы не хранить секреты в гите)
+appsettings.*.local.json
+secrets.json
+
+# ===== MySQL дампы (по желанию) =====
+*.sql
+*.sql.gz
+*.dump
